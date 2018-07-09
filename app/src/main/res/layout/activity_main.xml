@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Main"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#000000"
+        android:padding="5dp">
+        <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="  Search Track"
+        android:id="@+id/Search_element"
+            android:fontFamily="casual"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Search by\nTrack name"
+            android:layout_weight="0.5"
+            android:id="@+id/buttonSearch1" android:background="@color/yellow"
+            android:textColor="#000000"
+            android:textSize="15dp"
+            android:fontFamily="casual"
+            android:textStyle="bold"
+            android:layout_margin="2dp"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:text="Search by\nArtist name"
+            android:textSize="15dp"
+            android:id="@+id/buttonSearch2"
+            android:background="@color/yellow"
+            android:textColor="#000000"
+            android:fontFamily="casual"
+            android:textStyle="bold"
+            android:layout_margin="2dp"/>
+    </LinearLayout>
+    </LinearLayout>
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/icon">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.33"
+            android:text="Top Tracks"
+            android:id="@+id/buttonTracks"
+            android:background="#000000"
+            android:fontFamily="monospace"
+            android:textColor="@color/yellow"
+            android:textStyle="bold"
+            android:layout_margin="2dp"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.33"
+            android:text="Top Artists"
+            android:id="@+id/buttonArtists"
+            android:background="#000000"
+            android:fontFamily="monospace"
+            android:textColor="@color/yellow"
+            android:textStyle="bold"
+            android:layout_margin="2dp"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.33"
+            android:text="Favourites"
+            android:id="@+id/buttonFavorites"
+            android:background="#000000"
+            android:fontFamily="monospace"
+            android:textColor="@color/yellow"
+            android:textStyle="bold"
+            android:layout_margin="2dp"/>
+    </LinearLayout>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/TopList"></ListView>
+</LinearLayout>
+
+</LinearLayout>
